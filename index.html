@@ -10,7 +10,11 @@
     <div id="card">
       <div id="search">
         <input type="text" placeholder="Enter a City" spellcheck="false" />
-        <button><img src="images/search.png" alt="" /></button>
+        <button
+          onclick="checkWeather(document.querySelector('#search input').value)"
+        >
+          <img src="images/search.png" alt="" />
+        </button>
       </div>
       <div id="weather">
         <img
